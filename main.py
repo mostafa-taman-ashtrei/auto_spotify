@@ -19,7 +19,7 @@ def main():
     music_playlist_id = music_playlist[0]['id']
     my_songs = youtube_client.get_videos(music_playlist_id)
 
-    spotify_playlist_id = '3I5aRuFgAvZ4eiELHV11Zo'
+    spotify_playlist_id = '' # add your playlist id
     existing_songs = spotify_client.song_exists(spotify_playlist_id)
 
     for song in my_songs:
